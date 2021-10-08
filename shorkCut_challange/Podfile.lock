@@ -1,0 +1,20 @@
+PODS:
+  - SwiftLint (0.44.0)
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - SwiftLint
+  - TinyConstraints
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  SwiftLint: e96c0a8c770c7ebbc4d36c55baf9096bb65c4584
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: 39d96e5ec737360ea2bde33e7865ea26d388cde5
+
+COCOAPODS: 1.10.2

@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_shorkCut_challange_shorkCut_challangeUITests : NSObject
+@end
+@implementation PodsDummy_Pods_shorkCut_challange_shorkCut_challangeUITests
+@end
