@@ -15,7 +15,7 @@ struct FavoriteItem {
 
 class FavoritesViewModel {
     
-    var title: String = NSLocalizedString("favorites.tab.title", comment: "")
+    var title: String = "Favorite"
     
     //Subscription methods: To be subscribed by view controller
     var pushController: ((UIViewController) -> Void)?
@@ -32,7 +32,7 @@ class FavoritesViewModel {
         favoriteComics = comicStorageService.fetch()
         favoriteItems.removeAll()
         favoriteComics?.forEach({ favorite in
-            favoriteItems.append(FavoriteItem(title: "\(NSLocalizedString("home.page.title", comment: "")) \(favorite.num?.toString() ?? "")"))
+            favoriteItems.append(FavoriteItem(title: "Home"))
         })
         refreshFavorites?()
     }

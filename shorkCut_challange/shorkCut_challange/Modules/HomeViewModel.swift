@@ -25,11 +25,11 @@ class HomeViewModel {
     private var favoriteComics: [Comic]?
     
     var title = ""
-    var nextButtonTitle = NSLocalizedString("next.button.title", comment: "")
-    var previousButtonTitle = NSLocalizedString("previous.button.title", comment: "")
-    var firstButtonTitle = NSLocalizedString("first.button.title", comment: "")
-    var lastButtonTitle = NSLocalizedString("last.button.title", comment: "")
-    var searchPlaceholder = NSLocalizedString("search.bar.placeholder", comment: "")
+    var nextButtonTitle = "->"
+    var previousButtonTitle = "<-"
+    var firstButtonTitle = "<<-"
+    var lastButtonTitle = "->>"
+    var searchPlaceholder = "Comic-# or Text"
 
     var latestComicId: String = ""
     var currentComicId: String
@@ -123,7 +123,7 @@ class HomeViewModel {
         }
         
         //Update nav title
-        self.title = "\(NSLocalizedString("home.page.title", comment: "")) \(currentComicId)"
+        self.title = "Comic # \(currentComicId)"
         self.updateNavTitle?(self.title)
 
         //Update image

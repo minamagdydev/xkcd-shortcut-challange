@@ -98,7 +98,7 @@ final class HomeViewController: UIViewController {
     }()
     
     private lazy var loadingIndicator: UIActivityIndicatorView = {
-        let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        let activityIndicator = UIActivityIndicatorView(style: .medium)
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
         activityIndicator.color = .systemPurple
