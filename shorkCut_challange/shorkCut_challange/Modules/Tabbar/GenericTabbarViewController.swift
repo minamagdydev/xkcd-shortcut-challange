@@ -24,14 +24,14 @@ class GenericTabbarViewController: UITabBarController {
     func setTabbarItmes() {
         // Home Tab
         let homeViewController = HomeViewController(viewModel: HomeViewModel())
-        homeViewController.tabBarItem = UITabBarItem(title: "Fa",
+        homeViewController.tabBarItem = UITabBarItem(title: "Home",
                                                      image: UIImage(appImage: .home_tab_inactive).original,
                                                      selectedImage: UIImage(appImage: .home_tab_active).original)
         let homeTab = UINavigationController(rootViewController: homeViewController)
         
         // Favorites Tab
         let favoritesViewController = FavoritesViewController(viewModel: FavoritesViewModel())
-        favoritesViewController.tabBarItem = UITabBarItem(title: "Home",
+        favoritesViewController.tabBarItem = UITabBarItem(title: "Favorite",
                                                           image: UIImage(appImage: .favorites_tab_inactive).original,
                                                           selectedImage: UIImage(appImage: .favorites_tab_active).original)
         let favoritesTab = UINavigationController(rootViewController: favoritesViewController)

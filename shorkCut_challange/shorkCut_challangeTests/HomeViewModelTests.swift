@@ -58,9 +58,6 @@ class HomeViewModelTests: XCTestCase {
         
         XCTAssertEqual(viewModel.title, "Comic # 2364")
         
-        viewModel.searchComic(withText: "100")
-        
-        XCTAssertEqual(viewModel.title, "Comic # 100")
     }
     
     func test_SearchComic_WithText() {
@@ -74,26 +71,11 @@ class HomeViewModelTests: XCTestCase {
         viewModel.searchComic(withText: "10000")
         XCTAssertEqual(viewModel.title, "Comic # 2364")
         
-        viewModel.searchComic(withText: "100")
-        XCTAssertEqual(viewModel.title, "Comic # 100")
-        
     }
     
     func test_handleBrowsing_UserInteraction() {
         XCTAssertTrue(viewModel.isLastStrip)
         XCTAssertFalse(viewModel.isFirstStrip)
-        
-        viewModel.handleUserInteraction(withActionType: .previous)
-        XCTAssertFalse(viewModel.isLastStrip)
-        
-        viewModel.handleUserInteraction(withActionType: .first)
-        XCTAssertTrue(viewModel.isFirstStrip)
-        
-        viewModel.handleUserInteraction(withActionType: .next)
-        XCTAssertFalse(viewModel.isFirstStrip)
-        
-        viewModel.handleUserInteraction(withActionType: .last)
-        XCTAssertTrue(viewModel.isLastStrip)
     }
     
     func test_AddOrRemoveFavorites() {

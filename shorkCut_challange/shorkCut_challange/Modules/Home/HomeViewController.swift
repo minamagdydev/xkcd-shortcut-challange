@@ -330,3 +330,4 @@ extension HomeViewController {
         searchBar.resignFirstResponder()
     }
 }
+

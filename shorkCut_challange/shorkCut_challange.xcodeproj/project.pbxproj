@@ -33,7 +33,6 @@
 		3977B963270FC4520048D01B /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B95A270FC4520048D01B /* ParameterEncoding.swift */; };
 		3977B964270FC4520048D01B /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B95B270FC4520048D01B /* URLParameterEncoding.swift */; };
 		3977B965270FC4520048D01B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B95C270FC4520048D01B /* Router.swift */; };
-		3977B966270FC4520048D01B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B95D270FC4520048D01B /* APIManager.swift */; };
 		3977B967270FC4520048D01B /* ComicEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B95E270FC4520048D01B /* ComicEndPoint.swift */; };
 		3977B96C270FC4660048D01B /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B96B270FC4660048D01B /* StorageService.swift */; };
 		3977B985271068B10048D01B /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B984271068B10048D01B /* MockAPIManager.swift */; };
@@ -41,6 +40,7 @@
 		3977B99F27106B110048D01B /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B99E27106B110048D01B /* HomeViewModelTests.swift */; };
 		3977B9A827106BA50048D01B /* Comic_100.json in Resources */ = {isa = PBXBuildFile; fileRef = 3977B9A627106BA50048D01B /* Comic_100.json */; };
 		3977B9A927106BA50048D01B /* CurrentComic.json in Resources */ = {isa = PBXBuildFile; fileRef = 3977B9A727106BA50048D01B /* CurrentComic.json */; };
+		39CE63AA2712046700A77707 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B95D270FC4520048D01B /* APIManager.swift */; };
 		AAD3D00A488A99FDF4C082A7 /* Pods_shorkCut_challange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6D2446F1AE59AB0BEBBC32 /* Pods_shorkCut_challange.framework */; };
 /* End PBXBuildFile section */
 
@@ -193,10 +193,9 @@
 			children = (
 				3977B8FD270FB77D0048D01B /* Modules */,
 				3977B930270FC39C0048D01B /* DataManager */,
+				39CE63B12712048400A77707 /* stubs */,
 				3977B8EC270FB6200048D01B /* Commen */,
 				3977B92F270FC1980048D01B /* Extensions */,
-				3977B9A627106BA50048D01B /* Comic_100.json */,
-				3977B9A727106BA50048D01B /* CurrentComic.json */,
 				3977B8C5270FA7FB0048D01B /* Info.plist */,
 			);
 			path = shorkCut_challange;
@@ -277,9 +276,9 @@
 		3977B932270FC3B70048D01B /* API */ = {
 			isa = PBXGroup;
 			children = (
-				3977B95D270FC4520048D01B /* APIManager.swift */,
 				3977B95E270FC4520048D01B /* ComicEndPoint.swift */,
 				3977B957270FC4510048D01B /* EndPointType.swift */,
+				3977B95D270FC4520048D01B /* APIManager.swift */,
 				3977B959270FC4510048D01B /* NetworkManager.swift */,
 				3977B95A270FC4520048D01B /* ParameterEncoding.swift */,
 				3977B95C270FC4520048D01B /* Router.swift */,
@@ -322,6 +321,15 @@
 				3977B91A270FC15C0048D01B /* Comic.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		39CE63B12712048400A77707 /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				3977B9A727106BA50048D01B /* CurrentComic.json */,
+				3977B9A627106BA50048D01B /* Comic_100.json */,
+			);
+			path = stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -601,7 +609,7 @@
 				3977B92A270FC1930048D01B /* CGFloat+AppMargin.swift in Sources */,
 				3977B963270FC4520048D01B /* ParameterEncoding.swift in Sources */,
 				3977B910270FBF130048D01B /* FavoritesViewController.swift in Sources */,
-				3977B966270FC4520048D01B /* APIManager.swift in Sources */,
+				39CE63AA2712046700A77707 /* APIManager.swift in Sources */,
 				3977B8EE270FB7010048D01B /* Constant.swift in Sources */,
 				3977B915270FBF700048D01B /* FavoriteComicCell.swift in Sources */,
 			);
