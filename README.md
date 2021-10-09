@@ -1,6 +1,9 @@
 # xkcd-shortcut-challange 
 *** note search api is not working
-![](img1.png)
+
+
+<img src="https://github.com/minamagdydev/xkcd-shortcut-challange/blob/master/img1.png" width="200" height="300"> <img src="https://github.com/minamagdydev/xkcd-shortcut-challange/blob/master/img2.png" width="200" height="300"> <img src="https://github.com/minamagdydev/xkcd-shortcut-challange/blob/master/img3.png" width="200" height="300">
+
 
 ### Pods
 - SwiftLint
