@@ -8,7 +8,7 @@
 import Foundation
 
 struct Comic: Codable {
-    //Only mapping useful properties from the API object
+    // Only mapping useful properties from the API object
     var num: Double?
     var day: String?
     var month: String?
@@ -17,6 +17,6 @@ struct Comic: Codable {
     var alt: String?
     var img: String?
     
-    //Stored Properties
+    // Stored Properties
     var imageData: Data?
 }

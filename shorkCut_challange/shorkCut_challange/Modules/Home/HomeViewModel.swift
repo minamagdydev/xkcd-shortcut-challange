@@ -1,8 +1,8 @@
 //
-//  GenericTabbarViewController.swift
-//  shorkCut_challange
+//   GenericTabbarViewController.swift
+//   shorkCut_challange
 //
-//  Created by Mina on 10/8/21.
+//   Created by Mina on 10/8/21.
 //
 
 import Foundation
@@ -39,7 +39,7 @@ class HomeViewModel {
     
     var allowBrowsing: Bool = true
     
-    //Subscription methods: To be subscribed by view controller
+    // Subscription methods: To be subscribed by view controller
     var updateTitle: ((_ title: String) -> Void)?
     var updateNavTitle: ((_ title: String) -> Void)?
     var updateBarButtonImage: ((_ image: UIImage) -> Void)?
@@ -64,7 +64,7 @@ class HomeViewModel {
     
     func fetchData() {
         if let favoriteComic = favoriteComics?.first(where: {$0.num?.toString() == currentComicId}) {
-            //If comic is stored use the stored comic
+            // If comic is stored use the stored comic
             self.comic = favoriteComic
             self.updateFlagsAndValues()
         } else {
@@ -72,7 +72,6 @@ class HomeViewModel {
             apiManager.fetchComic(withId: currentComicId, completion: {[weak self] comic, error in
                 guard let self = self else { return }
                 guard let comic = comic, error == nil else {
-                    //TODO: Handle error fetching comic strip here - may be show an error image
                     self.comic = nil
                     self.updateImage?(UIImage(), false)
                     self.updateTitle?("")
@@ -91,7 +90,6 @@ class HomeViewModel {
             apiManager.fetchComicStrip(fromUrl: comicStripUrl, completion: {[weak self] cover, error in
                 guard let self = self else { return }
                 guard let imageData = cover, let image = UIImage(data: imageData), error == nil else {
-                    //TODO: Handle error fetching comic strip here - may be show an error image
                     self.updateImage?(UIImage(), false)
                     return
                 }
@@ -106,7 +104,6 @@ class HomeViewModel {
         apiManager.findComic(withSearchString: text, completion: {[weak self] comic, error in
             guard let self = self else { return }
             guard let comic = comic, error == nil else {
-                //TODO: Handle error fetching comic strip here - may be show an error image
                 self.updateImage?(UIImage(), false)
                 return
             }
@@ -122,28 +119,28 @@ class HomeViewModel {
             self.latestComicId = String(comic.num?.toString() ?? "")
         }
         
-        //Update nav title
+        // Update nav title
         self.title = "Comic # \(currentComicId)"
         self.updateNavTitle?(self.title)
 
-        //Update image
+        // Update image
         if let imageData = self.comic?.imageData {
             self.updateImage?(UIImage(data: imageData) ?? UIImage(), false)
         } else {
             self.fetchComicStrip()
         }
         
-        //Update title
+        // Update title
         self.updateTitle?(comic.title ?? "")
         
-        //Manage Favorite icon
+        // Manage Favorite icon
         if self.favoriteComics?.contains(where: {$0.num?.toString() == currentComicId}) ?? false {
             self.updateBarButtonImage?(UIImage(appImage: .filled_star).original)
         } else {
             self.updateBarButtonImage?(UIImage(appImage: .empty_star).original)
         }
         
-        //Update next/previous/first/last button states
+        // Update next/previous/first/last button states
         updateNavigationState()
         self.updateButtonState?()
     }
@@ -159,7 +156,6 @@ class HomeViewModel {
 extension HomeViewModel {
     func handleUserInteraction(withActionType actionType: ActionType?) {
         guard let type = actionType else {
-            //TODO: Show error if necessary
             return
         }
         switch type {
@@ -179,22 +175,22 @@ extension HomeViewModel {
     
     func addOrRemoveFavorite() {
         if let comicIndex = self.favoriteComics?.firstIndex(where: {$0.num?.toString() == currentComicId}) {
-            //Remove favorite
+            // Remove favorite
             favoriteComics?.remove(at: comicIndex)
             self.updateBarButtonImage?(UIImage(appImage: .empty_star).original)
         } else {
             if let currentComic = comic {
-                //Initialise favorites if empty
+                // Initialise favorites if empty
                 if favoriteComics == nil {
                     favoriteComics = []
                 }
-                //Add a new favorite
+                // Add a new favorite
                 favoriteComics?.append(currentComic)
                 self.updateBarButtonImage?(UIImage(appImage: .filled_star).original)
             }
         }
         
-        //Save preferences locally
+        // Save preferences locally
         comicStorageService.save(object: favoriteComics)
     }
     

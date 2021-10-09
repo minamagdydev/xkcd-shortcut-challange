@@ -19,7 +19,7 @@ enum Result<NetworkResponse> {
 struct NetworkManager {
     static let sharedNetworkManager = NetworkManager()
 
-    //Decode network response and return the mapped data
+    // Decode network response and return the mapped data
     func decodeNetworkResponse<T: Decodable>(_ data: Data?, _ response: URLResponse?,
                                              _ error: Error?,
                                              _: T.Type,
@@ -51,7 +51,7 @@ struct NetworkManager {
         }
     }
 
-    //More https status codes can be handled here
+    // More https status codes can be handled here
     func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<NetworkResponse> {
         switch response.statusCode {
         case 200 ... 299: return .success

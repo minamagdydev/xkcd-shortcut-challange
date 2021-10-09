@@ -17,11 +17,11 @@ class AppCommunicator {
     }
     
     func initialiseApp() {
-        //Perform any operations before loading initial page here
+        // Perform any operations before loading initial page here
         loadInitialPage()
     }
     
-    //Load Initial Page
+    // Load Initial Page
     private func loadInitialPage() {
        let genericTabBarController = GenericTabbarViewController()
        mainWindow.rootViewController = genericTabBarController
