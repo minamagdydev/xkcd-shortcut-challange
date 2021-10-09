@@ -41,8 +41,6 @@
 		3977B99F27106B110048D01B /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B99E27106B110048D01B /* HomeViewModelTests.swift */; };
 		3977B9A827106BA50048D01B /* Comic_100.json in Resources */ = {isa = PBXBuildFile; fileRef = 3977B9A627106BA50048D01B /* Comic_100.json */; };
 		3977B9A927106BA50048D01B /* CurrentComic.json in Resources */ = {isa = PBXBuildFile; fileRef = 3977B9A727106BA50048D01B /* CurrentComic.json */; };
-		39ADBDEE2711F98C004DAD1D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 39ADBDED2711F98C004DAD1D /* .swiftlint.yml */; };
-		39ADBDF32711F9AC004DAD1D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 39ADBDF22711F9AC004DAD1D /* .swiftlint.yml */; };
 		AAD3D00A488A99FDF4C082A7 /* Pods_shorkCut_challange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6D2446F1AE59AB0BEBBC32 /* Pods_shorkCut_challange.framework */; };
 /* End PBXBuildFile section */
 
@@ -446,8 +444,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39ADBDF32711F9AC004DAD1D /* .swiftlint.yml in Resources */,
-				39ADBDEE2711F98C004DAD1D /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
