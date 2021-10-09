@@ -7,7 +7,7 @@ target 'shorkCut_challange' do
 
   # Pods for shorkCut_challange
  pod 'TinyConstraints'
-  pod 'SwiftLint' 
+ pod 'SwiftLint' 
   target 'shorkCut_challangeTests' do
     inherit! :search_paths
     # Pods for testing

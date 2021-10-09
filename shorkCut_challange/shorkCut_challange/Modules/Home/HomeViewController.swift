@@ -253,9 +253,9 @@ final class HomeViewController: UIViewController {
                 } else {
                     self.loadingIndicator.startAnimating()
                 }
-                //Reset zoom on scrollview
+                // Reset zoom on scrollview
                 self.scrollView.setZoomScale(1.0, animated: false)
-                //Set image
+                // Set image
                 self.imageView.image = image
             }
         }

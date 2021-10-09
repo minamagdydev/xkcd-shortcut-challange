@@ -29,7 +29,7 @@ class APIManager {
             let resultString = String(decoding: resultData, as: UTF8.self)
             let results = resultString.split(whereSeparator: \.isNewline)
             
-            //Assumption: third line in the response string has the most favorable comic here for the search string in the format "id imagePath"
+            // Assumption: third line in the response string has the most favorable comic here for the search string in the format "id imagePath"
             if results.count > 2 {
                 let mostFavorableResult = results[2].split(separator: " ")
                 if !mostFavorableResult.isEmpty {

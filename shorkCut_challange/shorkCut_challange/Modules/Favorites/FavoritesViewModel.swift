@@ -17,7 +17,7 @@ class FavoritesViewModel {
     
     var title: String = "Favorite"
     
-    //Subscription methods: To be subscribed by view controller
+    // Subscription methods: To be subscribed by view controller
     var pushController: ((UIViewController) -> Void)?
     var refreshFavorites: (() -> Void)?
     
@@ -31,7 +31,7 @@ class FavoritesViewModel {
     func updateFavorites() {
         favoriteComics = comicStorageService.fetch()
         favoriteItems.removeAll()
-        favoriteComics?.forEach({ favorite in
+        favoriteComics?.forEach({ _ in
             favoriteItems.append(FavoriteItem(title: "Home"))
         })
         refreshFavorites?()

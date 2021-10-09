@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		2127A9DFE29CABB85FBA476B /* Pods_shorkCut_challange_shorkCut_challangeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC56948FF983D4E2B79BAC51 /* Pods_shorkCut_challange_shorkCut_challangeUITests.framework */; };
 		220D80532F47CC9D040247FE /* Pods_shorkCut_challangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CA4BAE210241F849915C00 /* Pods_shorkCut_challangeTests.framework */; };
+		39591E0A2711D712005D3641 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 39591E092711D712005D3641 /* .swiftlint.yml */; };
 		3977B8B8270FA7F80048D01B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B8B7270FA7F80048D01B /* AppDelegate.swift */; };
 		3977B8C1270FA7FB0048D01B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3977B8C0270FA7FB0048D01B /* Assets.xcassets */; };
 		3977B8C4270FA7FB0048D01B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3977B8C2270FA7FB0048D01B /* LaunchScreen.storyboard */; };
-		3977B8CF270FA7FC0048D01B /* shorkCut_challangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B8CE270FA7FC0048D01B /* shorkCut_challangeTests.swift */; };
-		3977B8DA270FA7FC0048D01B /* shorkCut_challangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B8D9270FA7FC0048D01B /* shorkCut_challangeUITests.swift */; };
 		3977B8EE270FB7010048D01B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B8ED270FB7010048D01B /* Constant.swift */; };
 		3977B8F6270FB7530048D01B /* AppCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B8F5270FB7530048D01B /* AppCommunicator.swift */; };
 		3977B8FF270FB7DC0048D01B /* GenericTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3977B8FE270FB7DC0048D01B /* GenericTabbarViewController.swift */; };
@@ -66,16 +65,15 @@
 		062B17E520A5A600D3A315BB /* Pods-shorkCut_challangeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shorkCut_challangeTests.debug.xcconfig"; path = "Target Support Files/Pods-shorkCut_challangeTests/Pods-shorkCut_challangeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		111EA72B92A1A84FBEB64042 /* Pods-shorkCut_challange-shorkCut_challangeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shorkCut_challange-shorkCut_challangeUITests.debug.xcconfig"; path = "Target Support Files/Pods-shorkCut_challange-shorkCut_challangeUITests/Pods-shorkCut_challange-shorkCut_challangeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		12CA4BAE210241F849915C00 /* Pods_shorkCut_challangeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shorkCut_challangeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39591E092711D712005D3641 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		3977B8B4270FA7F80048D01B /* shorkCut_challange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shorkCut_challange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3977B8B7270FA7F80048D01B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3977B8C0270FA7FB0048D01B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3977B8C3270FA7FB0048D01B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3977B8C5270FA7FB0048D01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3977B8CA270FA7FC0048D01B /* shorkCut_challangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shorkCut_challangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3977B8CE270FA7FC0048D01B /* shorkCut_challangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shorkCut_challangeTests.swift; sourceTree = "<group>"; };
 		3977B8D0270FA7FC0048D01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3977B8D5270FA7FC0048D01B /* shorkCut_challangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shorkCut_challangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3977B8D9270FA7FC0048D01B /* shorkCut_challangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shorkCut_challangeUITests.swift; sourceTree = "<group>"; };
 		3977B8DB270FA7FC0048D01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3977B8ED270FB7010048D01B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		3977B8F5270FB7530048D01B /* AppCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommunicator.swift; sourceTree = "<group>"; };
@@ -165,6 +163,7 @@
 		3977B8AB270FA7F80048D01B = {
 			isa = PBXGroup;
 			children = (
+				39591E092711D712005D3641 /* .swiftlint.yml */,
 				3977B8B6270FA7F80048D01B /* shorkCut_challange */,
 				3977B8CD270FA7FC0048D01B /* shorkCut_challangeTests */,
 				3977B8D8270FA7FC0048D01B /* shorkCut_challangeUITests */,
@@ -201,7 +200,6 @@
 		3977B8CD270FA7FC0048D01B /* shorkCut_challangeTests */ = {
 			isa = PBXGroup;
 			children = (
-				3977B8CE270FA7FC0048D01B /* shorkCut_challangeTests.swift */,
 				3977B8D0270FA7FC0048D01B /* Info.plist */,
 				3977B984271068B10048D01B /* MockAPIManager.swift */,
 				3977B98C271068F60048D01B /* FavoritesViewModelTests.swift */,
@@ -213,7 +211,6 @@
 		3977B8D8270FA7FC0048D01B /* shorkCut_challangeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3977B8D9270FA7FC0048D01B /* shorkCut_challangeUITests.swift */,
 				3977B8DB270FA7FC0048D01B /* Info.plist */,
 			);
 			path = shorkCut_challangeUITests;
@@ -331,7 +328,8 @@
 				3977B8B0270FA7F80048D01B /* Sources */,
 				3977B8B1270FA7F80048D01B /* Frameworks */,
 				3977B8B2270FA7F80048D01B /* Resources */,
-				FCDDBF36A23F90AD3AC8FB65 /* [CP] Embed Pods Frameworks */,
+				39F362702711C649002A9DDA /* Run Script */,
+				80C51244E247DD9C5F386603 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,7 +367,7 @@
 				3977B8D1270FA7FC0048D01B /* Sources */,
 				3977B8D2270FA7FC0048D01B /* Frameworks */,
 				3977B8D3270FA7FC0048D01B /* Resources */,
-				A983EF237FF5A943D5B90038 /* [CP] Embed Pods Frameworks */,
+				85C4FA32CDA95962168ED86A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -428,6 +426,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39591E0A2711D712005D3641 /* .swiftlint.yml in Resources */,
 				3977B8C4270FA7FB0048D01B /* LaunchScreen.storyboard in Resources */,
 				3977B8C1270FA7FB0048D01B /* Assets.xcassets in Resources */,
 				3977B9A827106BA50048D01B /* Comic_100.json in Resources */,
@@ -474,7 +473,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A983EF237FF5A943D5B90038 /* [CP] Embed Pods Frameworks */ = {
+		39F362702711C649002A9DDA /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n\n";
+		};
+		80C51244E247DD9C5F386603 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shorkCut_challange/Pods-shorkCut_challange-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shorkCut_challange/Pods-shorkCut_challange-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shorkCut_challange/Pods-shorkCut_challange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85C4FA32CDA95962168ED86A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -535,23 +569,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCDDBF36A23F90AD3AC8FB65 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-shorkCut_challange/Pods-shorkCut_challange-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-shorkCut_challange/Pods-shorkCut_challange-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shorkCut_challange/Pods-shorkCut_challange-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -589,7 +606,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3977B8CF270FA7FC0048D01B /* shorkCut_challangeTests.swift in Sources */,
 				3977B98D271068F60048D01B /* FavoritesViewModelTests.swift in Sources */,
 				3977B985271068B10048D01B /* MockAPIManager.swift in Sources */,
 				3977B99F27106B110048D01B /* HomeViewModelTests.swift in Sources */,
@@ -600,7 +616,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3977B8DA270FA7FC0048D01B /* shorkCut_challangeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
